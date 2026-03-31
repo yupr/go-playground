@@ -2,11 +2,12 @@ root = "."
 tmp_dir = "tmp"
 
 [build]
-  # 変更があったら実行されるビルドコマンド
-  cmd = "go build -o ./tmp/main ."
-  # ビルド後に起動するバイナリ
-  bin = "./tmp/main"
-  # 監視するファイルの拡張子
-  include_ext = ["go", "tpl", "tmpl", "html"]
-  # 監視から除外するディレクトリ
-  exclude_dir = ["assets", "tmp", "vendor"]
+cmd = "go build -o ./tmp/main ."
+bin = "./tmp/main"
+include_ext = ["go", "tpl", "tmpl", "html"]
+exclude_dir = ["assets", "tmp", "vendor"]
+
+# OSの通知に頼らず、直接ファイルを定期チェックするモード
+poll = true
+# チェックする間隔（ミリ秒）
+poll_interval = 500

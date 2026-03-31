@@ -7,11 +7,14 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
   },
   // 保存時に不要なimportを消し、必要なimportを自動追加する設定
   "editor.codeActionsOnSave": {
