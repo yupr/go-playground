@@ -4,11 +4,14 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-containers"
   },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // 保存時に不要なimportを消し、必要なimportを自動追加する設定
   "editor.codeActionsOnSave": {

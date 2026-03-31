@@ -1,0 +1,13 @@
+FROM golang:1.26.1-alpine
+
+WORKDIR /app
+
+# ホットリロードツール「Air」をインストール
+RUN go install github.com/air-verse/air@latest
+
+# モジュールのダウンロード
+COPY go.mod go.sum ./
+RUN go mod download
+
+# 起動コマンドは Air に任せる
+CMD ["air", "-c", ".air.toml"]
