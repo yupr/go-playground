@@ -16,5 +16,9 @@
   // 保存時に不要なimportを消し、必要なimportを自動追加する設定
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
+  },
+  // NOTE: TOML拡張機能のスキーマ誤認をプロジェクト単位で回避する設定
+  "evenBetterToml.schema.associations": {
+    ".air.toml": "https://json.schemastore.org/any.json"
   }
 }
